@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './mint.css';
 import React from 'react';
 import Web3 from "web3";
 import king from './images/legendary/Legendary1.jpg';
@@ -162,33 +163,28 @@ function Mint(props) {
     }
 
     return (
-        <div className="app">
+        <div className="container">
 
         {isSnack && (<SnackBar message={snackMsg} />)}
 
-        <div className="app__nav">
-            <img className="app__logo" src={king}/>
+        <div className="image">
+            <img className="mainImg" src={king}/>
         </div>
 
-        <div className="app__main">
-            <button onClick={handleWalletConnection} className={isConnectBtn ? "app__walletconnect" : "app__walletconnectdisabled"}>{isWalletConnected ? "DISCONNECT" : "CONNECT"}</button>
+        <div className="mainMint">
+            <button onClick={handleWalletConnection} className={isConnectBtn ? "app__walletconnect" : "app__walletconnectdisabled"}>{isWalletConnected ? "DISCONNECT WALLET" : "CONNECT WALLET"}</button>
 
-            <h6 className="app__heading"><span>MINT</span> a Freaky Punk <span>NOW</span>!</h6>
+            <h2 className="heading"><span>MINT</span> a Freaky Punk <span>NOW</span>!</h2>
 
-            <div className="app__interact">
-            <div className="app__interactmargin">
-                <div className="app__interactstats">
-                <div className="app__interactstatsdata">
-                    <h5>{punksAvailable} Freaky Punks available!</h5>
-                </div>
+                <div className="heading">
+                    <h3>{punksAvailable} Freaky Punks available!</h3>
                 </div>
 
-                <div className="app__inputcontainer">
+
+                <div className="mintingButton">
                 <input onChange={(e) => setMintAmount(e.target.value)} placeholder="1" className="app__inputavax" type="number" />
                 </div>
                 <button onClick={handleMint} disabled={!isMintBtn} className={isMintBtn ? "app__minebtn" : "app__minebtndisabled"}>MINT</button>
-            </div>
-            </div>
         </div>
         </div>
     );
