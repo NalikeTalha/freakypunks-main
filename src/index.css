@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: "Oswald", sans-seriff;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.pm-color {
+  /* color: #DDA0DD; */
+  /* color: #FFF; */
+  color: #8f0d93;
+}
+
+.pm-border {
+  border-bottom: 2px solid #8f0d93;
+}
+
+.pm2-color {
+  color: #C679F6;
+}
+
+.pm-bg {
+  background-color: #8f0d93;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.neon {
+  font-family: neon;
+  color: #E6E6FA;
+  font-size: 3em;
+  text-shadow: 0 0 3vw #8f0d93;
+  text-shadow: 0 0 .5vw #8f0d93, 0 0 1.5vw #8f0d93, 0 0 5vw #8f0d93, 0 0 5vw #400C60, 0 0 .2vw #400C60, .5vw .5vw .1vw #300948;
+}
+
+.flux {
+  font-family: neon;
+  color: #C6D3FD;
+  font-size: 3em;
+  text-shadow: 0 0 3vw #2356FF;
+  text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+}
+
+.purple-flux {
+  /* font-family: neon; */
+  color: #E6E6FA;
+  font-size: 3em;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #8f0d93;
+  text-shadow: 0 0 .5vw #8f0d93, 0 0 1.5vw #8f0d93, 0 0 5vw #8f0d93, 0 0 5vw #400C60, 0 0 .2vw #400C60, .5vw .5vw .1vw #300948;
+}
+
+/* .neon {
+  animation: neon 4s linear infinite;
+  -moz-animation: neon 4s linear infinite;
+  -webkit-animation: neon 4s linear infinite;
+  -o-animation: neon 5s linear infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #B34CF3, 0 0 3vw #B34CF3, 0 0 10vw #B34CF3, 0 0 10vw #800B84, 0 0 .4vw #F5E8FD, .5vw .5vw .1vw #C679F6;
+    color: #ECD2FC;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800B84, 0 0 1.5vw #800B84, 0 0 5vw #800B84, 0 0 5vw #400C60, 0 0 .2vw #400C60, .5vw .5vw .1vw #300948;
+    color: #C679F6;
+  }
+} */
+/* 
+.flux {
+  animation: flux 5s linear infinite;
+  -moz-animation: flux 5s linear infinite;
+  -webkit-animation: flux 5s linear infinite;
+  -o-animation: flux 5s linear infinite;
+} */
+/* 
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}  */
+
+/* .purple-flux {
+  animation: purple-flux 5s linear infinite;
+  -moz-animation: purple-flux 5s linear infinite;
+  -webkit-animation: purple-flux 5s linear infinite;
+  -o-animation: purple-flux 5s linear infinite;
+} */
+
+/* @keyframes purple-flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #8f0d93, 0 0 3vw #8f0d93, 0 0 10vw #8f0d93	, 0 0 10vw #8f0d93, 0 0 .4vw #EE82EE, .5vw .5vw .1vw #DDA0DD;
+    color: #EE82EE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #8f0d93, 0 0 1.5vw #8f0d93, 0 0 5vw #9932CC, 0 0 5vw #8B008B, 0 0 .2vw #800080, .5vw .5vw .1vw #4B0082;
+    color: #E6E6FA;
+  }
+} */
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.n-card {
+  background: black;
+  width: auto;
+  height: 200px;
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+}
+
+.n-card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #DDA0DD, #8f0d93 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.n-card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
