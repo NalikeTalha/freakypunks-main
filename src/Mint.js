@@ -177,7 +177,8 @@ function Mint(props) {
             <h2 className="heading"><span>MINT</span> a Freaky Punk <span>NOW</span>!</h2>
 
                 <div className="heading">
-                    <h3>{punksAvailable} Freaky Punks available!</h3>
+                    <h3>{punksAvailable} Freaky  Punks available!</h3>
+
                 </div>
 
 
